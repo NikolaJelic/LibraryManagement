@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="600.0" prefWidth="900.0" stylesheets="@table.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="libraryManagement.ui.listAuthor.ListAuthorController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="301.0" layoutY="206.0" prefHeight="650.0" prefWidth="950.0"
+              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <children>
+                <Text fx:id="authorName" fill="#eae3e3" strokeType="OUTSIDE" strokeWidth="0.0" text="Author"
+                      textAlignment="CENTER" underline="true" wrappingWidth="841.7294921875" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="25.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </Text>
+                <TableView fx:id="tableView" onMouseClicked="#selectBook" prefHeight="631.0" prefWidth="950.0">
+                    <columns>
+                        <TableColumn fx:id="idCol" prefWidth="190.0" text="Id"/>
+                        <TableColumn fx:id="titleCol" prefWidth="190.0" text="Title"/>
+                        <TableColumn fx:id="genreCol" prefWidth="190.0" text="Genre"/>
+                        <TableColumn fx:id="isReadCol" prefWidth="190.0" text="Read"/>
+                        <TableColumn fx:id="isLentCol" prefWidth="190.0" text="Lent"/>
+                    </columns>
+                    <VBox.margin>
+                        <Insets top="25.0"/>
+                    </VBox.margin>
+                </TableView>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

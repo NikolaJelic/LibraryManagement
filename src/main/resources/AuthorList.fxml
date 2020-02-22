@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" prefHeight="650.0" prefWidth="400.0" stylesheets="@table.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="libraryManagement.ui.listAuthor.AuthorList">
+    <children>
+        <TableView fx:id="tableView" onMouseClicked="#selectAuthor" prefHeight="650.0" prefWidth="400.0"
+                   stylesheets="@table.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="authorCol" prefWidth="399.0" text="Authors"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

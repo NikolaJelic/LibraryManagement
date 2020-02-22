@@ -1,0 +1,54 @@
+.root
+{
+-fx-background-color: #37474f;
+
+}
+.button{
+-fx-background-color: #102027;
+-fx-padding: 5 5 5 5;
+
+-fx-background-radius: 17 17 17 17;
+-fx-text-fill: #ffffff;
+-fx-text-size: 30;
+}
+
+.text-field {
+    -fx-background-color: #bfb8af;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-text-fill: #000000;
+
+    -fx-prompt-text-fill: #000000;
+
+}
+
+.text-field:focused {
+    -fx-background-color: #f2eae1;
+    -fx-border: none;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-text-fill: #000000;
+        -fx-prompt-text-fill: #f2eae1;
+}
+
+#saveButton:hover{
+-fx-background-color: #43a047;
+-fx-padding: 5 5 5 5;
+    -fx-text-fill: #000000;
+
+}
+#saveButton:pressed{
+-fx-background-color: #76d275;
+-fx-padding: 5 5 5 5;
+    -fx-text-fill: #000000;
+
+}
+#cancelButton:hover{
+-fx-background-color: #cf6679;
+-fx-padding: 5 5 5 5;
+    -fx-text-fill: #000000;
+
+}
+#cancelButton:pressed{
+-fx-background-color: #ff96a8;
+-fx-padding: 5 5 5 5;
+    -fx-text-fill: #000000;
+}
