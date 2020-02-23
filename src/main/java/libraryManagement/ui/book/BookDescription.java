@@ -27,7 +27,7 @@ public class BookDescription {
     public void saveDescription(ActionEvent actionEvent) {
         String description = descriptionBox.getText();
         try {
-            conn = DriverManager.getConnection("jdbc:sqlite::resource:resources/database.db");
+            conn = DriverManager.getConnection("jdbc:sqlite::resource:jar:file:LibraryManagement-1.0-all.jar!/database.db");
         } catch (SQLException e) {
             e.printStackTrace();
         }

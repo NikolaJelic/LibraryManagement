@@ -21,7 +21,7 @@ public class DatabaseHandler {
 
     private static DatabaseHandler handler = null;
 
-    private static final String DB_URL = "jdbc:sqlite::resource:resources/database.db";
+    private static final String DB_URL = "jdbc:sqlite::resource:jar:file:LibraryManagement-1.0-all.jar!/database.db";
 
     private static Connection conn = null;
     private static Statement stmt = null;

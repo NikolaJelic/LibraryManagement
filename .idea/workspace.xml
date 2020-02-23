@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08097c92-c372-4dea-8e3b-94d726563b12" name="Default Changelist" comment="" />
+    <list default="true" id="08097c92-c372-4dea-8e3b-94d726563b12" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/database/DatabaseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/database/DatabaseHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/addBook/AddBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/addBook/AddBookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/book/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/book/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/book/BookDescription.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/book/BookDescription.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/AuthorList$Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/AuthorList$Author.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/AuthorList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/AuthorList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/ListAuthorController$Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/ListAuthorController$Author.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/ListAuthorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/ListAuthorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listBook/ListBookController$Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listBook/ListBookController$Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listBook/ListBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listBook/ListBookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenre$Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenre$Genre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenre.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenreController$Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenreController$Genre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenreController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/LibraryManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/LibraryManagement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/LibraryManagement-1.0-all.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/LibraryManagement-1.0-all.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libraryManagement/database/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libraryManagement/database/DatabaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/book/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/book/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/book/BookDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/book/BookDescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/main/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/main/MainController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +80,24 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="LibraryManagement" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="shadow" type="c8890929:TasksNode$1" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LibraryManagement" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="distribution" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LibraryManagement" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LibraryManagement" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -53,8 +110,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="package-info" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Y513uHBeUQTkEXHolEazxJciCe" />
   <component name="ProjectViewState">
@@ -64,17 +125,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jelic\IdeaProjects\LibraryManagement" />
-      <recent name="C:\Users\jelic\IdeaProjects\LibraryManagement\src\main\resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jelic\IdeaProjects\LibraryManagement" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jelic\IdeaProjects\LibraryManagement\src\main\resources" />
       <recent name="C:\Users\jelic\IdeaProjects\LibraryManagement" />
     </key>
   </component>
@@ -124,6 +186,25 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="LibraryManagement [jlink]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jlink" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="LibraryManagement [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -156,11 +237,13 @@
       <item itemvalue="Gradle.LibraryManagement [shadowJar]" />
       <item itemvalue="Gradle.LibraryManagement [clean]" />
       <item itemvalue="JAR Application.LibraryManagement-1.0-SNAPSHOT-all.jar" />
+      <item itemvalue="Gradle.LibraryManagement [jlink]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.LibraryManagement-1.0-SNAPSHOT-all.jar" />
+        <item itemvalue="Gradle.LibraryManagement [jlink]" />
         <item itemvalue="Gradle.LibraryManagement [clean]" />
+        <item itemvalue="JAR Application.LibraryManagement-1.0-SNAPSHOT-all.jar" />
         <item itemvalue="Application.LibraryManagement" />
         <item itemvalue="Application.Main" />
       </list>
@@ -184,26 +267,30 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="294" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1582307274781" />
-    <state x="668" y="400" width="368" height="209" key="Github.CreateGistDialog" timestamp="1582375968079">
+    <state x="399" y="14" key="CommitChangelistDialog2" timestamp="1582499869648">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="668" y="400" width="368" height="209" key="Github.CreateGistDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1582375968079" />
-    <state width="1637" height="-8" key="GridCell.Tab.0.bottom" timestamp="1582378774834">
+    <state x="399" y="14" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1582499869648" />
+    <state x="668" y="400" width="368" height="209" key="Github.CreateGistDialog" timestamp="1582491463287">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="-8" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1582378774834" />
-    <state width="1637" height="-8" key="GridCell.Tab.0.center" timestamp="1582378774834">
+    <state x="668" y="400" width="368" height="209" key="Github.CreateGistDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1582491463287" />
+    <state width="1637" height="168" key="GridCell.Tab.0.bottom" timestamp="1582499869789">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="-8" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1582378774834" />
-    <state width="1637" height="-8" key="GridCell.Tab.0.left" timestamp="1582378774834">
+    <state width="1637" height="168" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1582499869789" />
+    <state width="1637" height="168" key="GridCell.Tab.0.center" timestamp="1582499869789">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="-8" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1582378774834" />
-    <state width="1637" height="-8" key="GridCell.Tab.0.right" timestamp="1582378774834">
+    <state width="1637" height="168" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1582499869789" />
+    <state width="1637" height="168" key="GridCell.Tab.0.left" timestamp="1582499869789">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="-8" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1582378774834" />
+    <state width="1637" height="168" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1582499869789" />
+    <state width="1637" height="168" key="GridCell.Tab.0.right" timestamp="1582499869789">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="168" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1582499869789" />
     <state width="1637" height="785" key="GridCell.Tab.1.bottom" timestamp="1582313087767">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -220,14 +307,18 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1637" height="785" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1582313087767" />
-    <state x="320" y="80" key="SettingsEditor" timestamp="1582312673257">
+    <state x="320" y="80" key="SettingsEditor" timestamp="1582490775582">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="320" y="80" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1582312673257" />
-    <state x="516" y="330" key="com.intellij.ide.util.TipDialog" timestamp="1582359985797">
+    <state x="320" y="80" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1582490775582" />
+    <state x="516" y="330" key="com.intellij.ide.util.TipDialog" timestamp="1582450926701">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="516" y="330" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1582359985797" />
+    <state x="516" y="330" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1582450926701" />
+    <state x="445" y="73" key="new project wizard" timestamp="1582494972516">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="445" y="73" key="new project wizard/0.0.1680.1010@0.0.1680.1010" timestamp="1582494972516" />
     <state x="496" y="233" width="672" height="677" key="run.anything.popup" timestamp="1582228016740">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
