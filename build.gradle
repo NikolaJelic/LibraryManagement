@@ -3,13 +3,21 @@ plugins {
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.8'
     id 'com.github.johnrengelman.shadow' version '5.2.0'
+    id "org.beryx.jlink" version "2.17.2"
 }
 
 group 'libraryManagement'
 version '1.0'
-mainClassName = 'libraryManagement/ui/main/LibraryManagement'
+mainClassName = 'libraryManagement.ui.main.LibraryManagement'
 
 sourceCompatibility = 1.9
+
+ext {
+    appLauncher = "libraryManagement"
+    appPackaging = "libraryManagement"
+    appModuleName = "libraryManagement"
+    appMainClass = "libraryManagement.ui.main.LibraryManagement"
+}
 
 repositories {
     mavenCentral()
@@ -22,10 +30,30 @@ dependencies {
 
 
 }
+
 javafx {
     version = "13"
     modules = ['javafx.controls', 'javafx.fxml']
 
 }
 
+jlink {
+    imageZip = project.file("${buildDir}/distributions/${appPackaging}-${javafx.platform.classifier}.zip")
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    launcher {
+        name = "${appLauncher}"
+    }
+}
 
+task dist {
+    dependsOn clean, jlinkZip
+    description "Calls clean and then jlinkZip [default]"
+}
+
+defaultTasks 'dist'
+
+if (project.hasProperty('debugRun') && project.debugRun as boolean) {
+    run {
+        jvmArgs '-Xdebug', '-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=*:5005'
+    }
+}

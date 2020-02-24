@@ -1,4 +1,4 @@
-open module LibraryManagement{
+open module libraryManagement{
     requires java.base;
     requires javafx.controls;
     requires javafx.base;
@@ -7,6 +7,4 @@ open module LibraryManagement{
     requires java.sql;
     requires sqlite.jdbc;
     requires java.desktop;
-
-
 }
