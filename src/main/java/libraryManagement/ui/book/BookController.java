@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 public class BookController implements Initializable {
     public Text bookID;
     DatabaseHandler handler = DatabaseHandler.getInstance();
-    private static final String DB_URL = "jdbc:sqlite::resource:jar:file:LibraryManagement-1.0-all.jar!/database.db";
+    private static final String DB_URL = "jdbc:sqlite::resource:jar:file:LibraryManagement.jar!/database.db";
     private static Connection conn = null;
     private static Statement stmt = null;
     public Button isReadToggle;

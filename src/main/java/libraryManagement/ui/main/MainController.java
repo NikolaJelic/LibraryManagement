@@ -67,7 +67,7 @@ public class MainController implements Initializable {
         String searchBook = searchBox.getText().toLowerCase();
 
         try {
-            conn = DriverManager.getConnection("jdbc:sqlite::resource:jar:file:LibraryManagement-1.0-all.jar!/database.db");
+            conn = DriverManager.getConnection("jdbc:sqlite::resource:jar:file:LibraryManagement.jar!/database.db");
         } catch (SQLException e) {
             e.printStackTrace();
         }
