@@ -5,37 +5,84 @@ import org.sqlite.SQLiteConfig;
 import org.sqlite.SQLiteDataSource;
 
 import javax.swing.*;
+import java.io.File;
 import java.sql.*;
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 public class DatabaseHandler {
 
     private static DatabaseHandler handler = null;
 
-    private static final String DB_URL = "jdbc:sqlite::resource:jar:file:LibraryManagement.jar!/database.db";
+    private static final String DB_URL = "jdbc:sqlite:database.db";
 
     private static Connection conn = null;
     private static Statement stmt = null;
 
     private DatabaseHandler() throws SQLException {
-        createConnection();
-     //   setBookTable();
+        try {
+            createConnection("database.db");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //   setBookTable();
     }
 
     public static DatabaseHandler getInstance() throws SQLException {
         if (handler == null) {
             handler = new DatabaseHandler();
         }
+        createNewTable();
         return handler;
+    }
+
+
+    public static void createConnection(String dbName) throws Exception {
+        String url = "jdbc:sqlite:" + dbName;
+        File file = new File(dbName);
+
+        if (file.exists()) //here's how to check
+        {
+            System.out.print("This database name already exists");
+        } else {
+
+            try (Connection conn = DriverManager.getConnection(url)) {
+                if (conn != null) {
+                    DatabaseMetaData meta = conn.getMetaData();
+                    System.out.println("The driver name is " + meta.getDriverName());
+                    System.out.println("A new database has been created.");
+                }
+
+            } catch (SQLException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+
+    }
+
+    public static void createNewTable() {
+        // SQLite connection string
+        String url = "jdbc:sqlite:database.db";
+
+        // SQL statement for creating a new table
+        String sql = "CREATE TABLE IF NOT EXISTS BOOK (\n"
+                + "   bookId integer NOT NULL PRIMARY KEY AUTOINCREMENT,\n"
+                + "   bookTitle VARCHAR(200),\n"
+                + "   bookGenre VARCHAR(200),\n"
+                + "   bookAuthor VARCHAR(200),\n"
+                + "   bookDescription TEXT DEFAULT 'opis'\n"
+                + "   isRead BOOLEAN DEFAULT 'false',\n"
+                + "   isLent BOOLEAN DEFAULT 'false',\n"
+                + "   bookLender VARCHAR(200) DEFAULT 'false'\n"
+
+
+                + ");";
+
+        try (Connection conn = DriverManager.getConnection(url);
+             Statement stmt = conn.createStatement()) {
+            // create a new table
+            stmt.execute(sql);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     //     bookId INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1,  INCREMENT BY 1) ,

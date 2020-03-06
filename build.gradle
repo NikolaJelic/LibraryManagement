@@ -10,7 +10,7 @@ group 'libraryManagement'
 version '1.0'
 mainClassName = 'libraryManagement.ui.main.LibraryManagement'
 
-sourceCompatibility = 1.9
+sourceCompatibility = 11
 
 ext {
     appLauncher = "libraryManagement"
@@ -32,7 +32,7 @@ dependencies {
 }
 
 javafx {
-    version = "13"
+    version = "11"
     modules = ['javafx.controls', 'javafx.fxml']
 
 }

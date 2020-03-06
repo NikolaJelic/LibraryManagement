@@ -13,8 +13,6 @@ import libraryManagement.database.DatabaseHandler;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import static javafx.application.Application.launch;
-
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
@@ -43,7 +41,7 @@ public class Main extends Application {
 
     public void shutdown() {
         try {
-            DriverManager.getConnection("jdbc:sqlite::resource:jar:file:LibraryManagement.jar!/database.db");
+            DriverManager.getConnection("jdbc:sqlite:database.db");
         } catch (
                 SQLException se) {
             // SQL State XJO15 and SQLCode 50000 mean an OK shutdown.

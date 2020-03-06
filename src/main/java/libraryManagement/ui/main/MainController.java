@@ -11,8 +11,6 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-
-import java.sql.PreparedStatement;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
@@ -67,7 +65,7 @@ public class MainController implements Initializable {
         String searchBook = searchBox.getText().toLowerCase();
 
         try {
-            conn = DriverManager.getConnection("jdbc:sqlite::resource:jar:file:LibraryManagement.jar!/database.db");
+            conn = DriverManager.getConnection("jdbc:sqlite:database.db");
         } catch (SQLException e) {
             e.printStackTrace();
         }
