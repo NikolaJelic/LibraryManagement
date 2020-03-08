@@ -4,21 +4,20 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="rootPane" prefHeight="650.0" prefWidth="950.0" stylesheets="@table.css"
-            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="libraryManagement.ui.listBook.ListBookController">
+<AnchorPane fx:id="rootPane" prefHeight="650.0" prefWidth="950.0" stylesheets="@table.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryManagement.ui.listBook.ListBookController">
     <children>
-        <TableView fx:id="tableView" layoutX="334.0" layoutY="187.0" onMouseClicked="#selectBook" prefHeight="650.0"
-                   prefWidth="950.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <TableView fx:id="tableView" layoutX="334.0" layoutY="187.0" onMouseClicked="#selectBook" prefHeight="650.0" prefWidth="950.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <columns>
-                <TableColumn fx:id="idCol" maxWidth="250.0" minWidth="50.0" prefWidth="158.0" text="ID"/>
-                <TableColumn fx:id="titleCol" maxWidth="250.0" minWidth="50.0" prefWidth="158.0" text="Title"/>
-                <TableColumn fx:id="authorCol" maxWidth="250.0" minWidth="50.0" prefWidth="158.0" text="Author"/>
-                <TableColumn fx:id="genreCol" maxWidth="250.0" minWidth="50.0" prefWidth="158.0" text="Genre"/>
-                <TableColumn fx:id="readCol" maxWidth="250.0" minWidth="50.0" prefWidth="158.0" text="Read"/>
-                <TableColumn fx:id="lentCol" maxWidth="250.0" minWidth="50.0" prefWidth="158.0" text="Lent"/>
+                <TableColumn fx:id="idCol" editable="false" maxWidth="250.0" minWidth="50.0" prefWidth="158.0" text="ID" />
+                <TableColumn fx:id="titleCol" editable="false" maxWidth="250.0" minWidth="50.0" prefWidth="158.0" text="Naslov" />
+                <TableColumn fx:id="authorCol" editable="false" maxWidth="250.0" minWidth="50.0" prefWidth="158.0" text="Autor" />
+                <TableColumn fx:id="genreCol" editable="false" maxWidth="250.0" minWidth="50.0" prefWidth="158.0" text="Žanr" />
+                <TableColumn fx:id="readCol" editable="false" maxWidth="250.0" minWidth="50.0" prefWidth="158.0" text="Pročitano" />
+                <TableColumn fx:id="lentCol" editable="false" maxWidth="250.0" minWidth="50.0" prefWidth="158.0" text="Pozajmljeno" />
             </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
         </TableView>
    </children>
 </AnchorPane>

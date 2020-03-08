@@ -17,7 +17,7 @@
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Text fill="#e0e0e0" opacity="0.8" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Id:">
+                        <Text fill="#e0e0e0" opacity="0.8" strokeType="OUTSIDE" strokeWidth="0.0" text="ID knjige">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -25,7 +25,7 @@
                               <Insets />
                            </HBox.margin>
                         </Text>
-                        <Text fx:id="bookID" fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" translateX="105.0">
+                        <Text fx:id="bookID" fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" translateX="100.0" wrappingWidth="50.0">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -34,12 +34,12 @@
                   </HBox>
                   <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Text fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Title:">
+                        <Text fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Naslov">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <Text fx:id="bookTitle" fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" translateX="80.0">
+                        <Text fx:id="bookTitle" fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" translateX="120.0" wrappingWidth="200.0">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -48,12 +48,12 @@
                   </HBox>
                   <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Text fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre:">
+                        <Text fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Žanr">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <Text fx:id="bookGenre" fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre" translateX="115.0" wrappingWidth="52.91015625">
+                        <Text fx:id="bookGenre" fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre" translateX="140.0" wrappingWidth="200.0">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -62,12 +62,12 @@
                   </HBox>
                   <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Text fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author:">
+                        <Text fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autor">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <Text fx:id="bookAuthor" fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" translateX="105.0">
+                        <Text fx:id="bookAuthor" fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" translateX="130.0" wrappingWidth="200.0">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -85,12 +85,12 @@
                      <children>
                         <HBox alignment="CENTER_LEFT" prefHeight="79.0" prefWidth="500.0">
                            <children>
-                              <Text fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is Read: ">
+                              <Text fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pročitana">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
                               </Text>
-                              <Text fx:id="isReadText" fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" translateX="98.0">
+                              <Text fx:id="isReadText" fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" translateX="90.0">
                                  <HBox.margin>
                                     <Insets />
                                  </HBox.margin>
@@ -98,7 +98,7 @@
                                     <Font size="20.0" />
                                  </font>
                               </Text>
-                              <Button fx:id="isReadToggle" mnemonicParsing="false" onAction="#isReadChange" text="Change" textAlignment="CENTER" translateX="190.0">
+                              <Button fx:id="isReadToggle" mnemonicParsing="false" onAction="#isReadChange" text="Promijeni" textAlignment="CENTER" translateX="240.0">
                                  <font>
                                     <Font size="13.0" />
                                  </font>
@@ -113,12 +113,12 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="110.0" layoutY="10.0" prefHeight="68.0" prefWidth="500.0">
                            <children>
-                              <Text fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is Lent: ">
+                              <Text fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pozajmljena">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
                               </Text>
-                              <Text fx:id="isLentText" fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" translateX="103.0">
+                              <Text fx:id="isLentText" fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" translateX="70.0">
                                  <HBox.margin>
                                     <Insets />
                                  </HBox.margin>
@@ -126,7 +126,7 @@
                                     <Font size="20.0" />
                                  </font>
                               </Text>
-                              <Button fx:id="isLentToggle" mnemonicParsing="false" onAction="#isLentChange" text="Change" textAlignment="CENTER" translateX="195.0">
+                              <Button fx:id="isLentToggle" mnemonicParsing="false" onAction="#isLentChange" text="Promijeni" textAlignment="CENTER" translateX="215.0">
                                  <font>
                                     <Font size="13.0" />
                                  </font>
@@ -158,7 +158,7 @@
                   </TextArea>
                   <VBox alignment="CENTER" prefHeight="226.0" prefWidth="152.0">
                      <children>
-                        <Button fx:id="editButton" mnemonicParsing="false" onAction="#editDescription" text="Edit">
+                        <Button fx:id="editButton" mnemonicParsing="false" onAction="#editDescription" text="Uredi">
                            <font>
                               <Font size="15.0" />
                            </font>
@@ -166,7 +166,7 @@
                               <Insets bottom="20.0" />
                            </VBox.margin>
                         </Button>
-                        <Button fx:id="refreshButton" layoutX="36.0" layoutY="111.0" mnemonicParsing="false" onAction="#refreshDescription" opacity="0.82" text="Refresh" />
+                        <Button fx:id="refreshButton" layoutX="36.0" layoutY="111.0" mnemonicParsing="false" onAction="#refreshDescription" opacity="0.82" text="Osvježi" />
                      </children>
                   </VBox>
                </children>
@@ -179,7 +179,7 @@
                   <Insets bottom="10.0" top="10.0" />
                </VBox.margin>
                <children>
-                  <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteBook" text=" Delete Book" textAlignment="JUSTIFY">
+                  <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteBook" text="Ukloni Knjigu" textAlignment="JUSTIFY">
                      <font>
                         <Font size="15.0" />
                      </font>

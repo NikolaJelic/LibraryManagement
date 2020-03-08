@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08097c92-c372-4dea-8e3b-94d726563b12" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database.sqbpro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -11,35 +13,28 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/database/DatabaseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/database/DatabaseHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/addBook/AddBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/addBook/AddBookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/book/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/book/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/book/BookDescription.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/book/BookDescription.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/AuthorList$Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/AuthorList$Author.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/AuthorList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/AuthorList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/ListAuthorController$Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/ListAuthorController$Author.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/ListAuthorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listAuthor/ListAuthorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listBook/ListBookController$Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listBook/ListBookController$Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listBook/ListBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listBook/ListBookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenre$Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenre$Genre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenre.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenreController$Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenreController$Genre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/listGenre/ListGenreController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/LibraryManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/LibraryManagement.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/Main$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/LibraryManagement-1.0-all.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/shadowJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libraryManagement/database/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libraryManagement/database/DatabaseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/book/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/book/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/book/BookDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/book/BookDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/main/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/main/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/AuthorList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/AuthorList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/GenreList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/GenreList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/book.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/book_description.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/book_description.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/list_author.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/list_author.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/list_book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/list_book.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/list_genre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/list_genre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/AuthorList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AuthorList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/GenreList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GenreList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/book.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/book_description.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/book_description.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/list_author.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/list_author.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/list_book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/list_book.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/list_genre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/list_genre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +109,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="NikolaJelic &lt;51965240+nikolajelic@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Y513uHBeUQTkEXHolEazxJciCe" />
@@ -142,33 +142,12 @@
       <recent name="C:\Users\jelic\IdeaProjects\LibraryManagement" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LibraryManagement">
-    <configuration name="LibraryManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="libraryManagement.ui.main.LibraryManagement" />
-      <module name="LibraryManagement.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="libraryManagement.ui.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="libraryManagement.ui.main.Main" />
-      <module name="LibraryManagement.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="libraryManagement.ui.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle run" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.LibraryManagement [run]">
     <configuration name="LibraryManagement [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -207,6 +186,25 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="LibraryManagement [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="LibraryManagement [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -233,21 +231,25 @@
       <module name="LibraryManagement.main" />
       <method v="2" />
     </configuration>
+    <configuration name="LibraryManagement-1.0-all.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/build/libs/LibraryManagement-1.0-all.jar" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.LibraryManagement" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.LibraryManagement [shadowJar]" />
       <item itemvalue="Gradle.LibraryManagement [clean]" />
       <item itemvalue="Gradle.LibraryManagement [jlink]" />
       <item itemvalue="JAR Application.LibraryManagement-1.0-SNAPSHOT-all.jar" />
+      <item itemvalue="JAR Application.LibraryManagement-1.0-all.jar" />
+      <item itemvalue="Gradle.LibraryManagement [run]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LibraryManagement [jlink]" />
+        <item itemvalue="Gradle.LibraryManagement [run]" />
         <item itemvalue="Gradle.LibraryManagement [clean]" />
+        <item itemvalue="JAR Application.LibraryManagement-1.0-all.jar" />
+        <item itemvalue="Gradle.LibraryManagement [jlink]" />
         <item itemvalue="JAR Application.LibraryManagement-1.0-SNAPSHOT-all.jar" />
-        <item itemvalue="Application.LibraryManagement" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -262,50 +264,67 @@
       <option name="presentableId" value="Default" />
       <updated>1582217445364</updated>
     </task>
+    <task id="LOCAL-00001" summary="committed with errors">
+      <created>1583521303207</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583521303208</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="committed with errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="committed with errors" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="294" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582307274781">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="294" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583671918249">
+      <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="294" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1582307274781" />
+    <state x="294" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1680.1020@0.30.1680.1020" timestamp="1583671918249" />
     <state x="522" y="333" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583511626711">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="522" y="333" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1680.1020@0.30.1680.1020" timestamp="1583511626711" />
-    <state x="399" y="14" key="CommitChangelistDialog2" timestamp="1582499897880">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="399" y="44" key="CommitChangelistDialog2" timestamp="1583521302873">
+      <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="399" y="14" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1582499897880" />
+    <state x="399" y="44" key="CommitChangelistDialog2/0.30.1680.1020@0.30.1680.1020" timestamp="1583521302873" />
     <state x="627" y="285" key="FileChooserDialogImpl" timestamp="1583519524424">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="627" y="285" key="FileChooserDialogImpl/0.30.1680.1020@0.30.1680.1020" timestamp="1583519524424" />
-    <state x="668" y="434" width="407" height="212" key="Github.CreateGistDialog" timestamp="1583518324080">
+    <state x="668" y="434" width="407" height="212" key="Github.CreateGistDialog" timestamp="1583686762582">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="668" y="400" width="368" height="209" key="Github.CreateGistDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1582558386746" />
-    <state x="668" y="434" width="407" height="212" key="Github.CreateGistDialog/0.30.1680.1020@0.30.1680.1020" timestamp="1583518324080" />
-    <state width="1638" height="247" key="GridCell.Tab.0.bottom" timestamp="1583520014930">
+    <state x="668" y="434" width="407" height="212" key="Github.CreateGistDialog/0.30.1680.1020@0.30.1680.1020" timestamp="1583686762582" />
+    <state width="1638" height="247" key="GridCell.Tab.0.bottom" timestamp="1583686700887">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state width="1637" height="53" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1582569289176" />
-    <state width="1638" height="247" key="GridCell.Tab.0.bottom/0.30.1680.1020@0.30.1680.1020" timestamp="1583520014930" />
-    <state width="1638" height="247" key="GridCell.Tab.0.center" timestamp="1583520014930">
+    <state width="1638" height="247" key="GridCell.Tab.0.bottom/0.30.1680.1020@0.30.1680.1020" timestamp="1583686700887" />
+    <state width="1638" height="247" key="GridCell.Tab.0.center" timestamp="1583686700887">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state width="1637" height="53" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1582569289175" />
-    <state width="1638" height="247" key="GridCell.Tab.0.center/0.30.1680.1020@0.30.1680.1020" timestamp="1583520014930" />
-    <state width="1638" height="247" key="GridCell.Tab.0.left" timestamp="1583520014930">
+    <state width="1638" height="247" key="GridCell.Tab.0.center/0.30.1680.1020@0.30.1680.1020" timestamp="1583686700887" />
+    <state width="1638" height="247" key="GridCell.Tab.0.left" timestamp="1583686700887">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state width="1637" height="53" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1582569289175" />
-    <state width="1638" height="247" key="GridCell.Tab.0.left/0.30.1680.1020@0.30.1680.1020" timestamp="1583520014930" />
-    <state width="1638" height="247" key="GridCell.Tab.0.right" timestamp="1583520014930">
+    <state width="1638" height="247" key="GridCell.Tab.0.left/0.30.1680.1020@0.30.1680.1020" timestamp="1583686700887" />
+    <state width="1638" height="247" key="GridCell.Tab.0.right" timestamp="1583686700887">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state width="1637" height="53" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1582569289176" />
-    <state width="1638" height="247" key="GridCell.Tab.0.right/0.30.1680.1020@0.30.1680.1020" timestamp="1583520014930" />
+    <state width="1638" height="247" key="GridCell.Tab.0.right/0.30.1680.1020@0.30.1680.1020" timestamp="1583686700887" />
     <state width="1638" height="310" key="GridCell.Tab.1.bottom" timestamp="1583517769591">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
@@ -331,15 +350,16 @@
     </state>
     <state x="320" y="80" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1582490775582" />
     <state x="320" y="111" key="SettingsEditor/0.30.1680.1020@0.30.1680.1020" timestamp="1583519526617" />
-    <state x="432" y="235" key="Vcs.Push.Dialog.v2" timestamp="1582499903030">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="432" y="267" key="Vcs.Push.Dialog.v2" timestamp="1583521305307">
+      <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="432" y="235" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1582499903030" />
-    <state x="516" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1583508429452">
+    <state x="432" y="267" key="Vcs.Push.Dialog.v2/0.30.1680.1020@0.30.1680.1020" timestamp="1583521305307" />
+    <state x="516" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1583665013924">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="516" y="330" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1582531334070" />
-    <state x="516" y="363" key="com.intellij.ide.util.TipDialog/0.30.1680.1020@0.30.1680.1020" timestamp="1583508429452" />
+    <state x="516" y="363" key="com.intellij.ide.util.TipDialog/0.30.1680.1020@0.30.1680.1020" timestamp="1583665013924" />
     <state x="509" y="233" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583515076729">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
@@ -348,28 +368,14 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="445" y="73" key="new project wizard/0.0.1680.1010@0.0.1680.1010" timestamp="1582494972516" />
-    <state x="496" y="233" width="672" height="677" key="run.anything.popup" timestamp="1582228016740">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="496" y="265" width="672" height="684" key="run.anything.popup" timestamp="1583686700870">
+      <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="496" y="233" width="672" height="677" key="run.anything.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1582228016740" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/libraryManagement/ui/main/Main.java</url>
-          <line>19</line>
-          <properties class="libraryManagement.ui.main.Main" method="start">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/libraryManagement/ui/main/Main.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="496" y="265" width="672" height="684" key="run.anything.popup/0.30.1680.1020@0.30.1680.1020" timestamp="1583686700870" />
+    <state x="503" y="251" key="search.everywhere.popup" timestamp="1583686751651">
+      <screen x="0" y="30" width="1680" height="1020" />
+    </state>
+    <state x="503" y="251" key="search.everywhere.popup/0.30.1680.1020@0.30.1680.1020" timestamp="1583686751651" />
   </component>
 </project>

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <AnchorPane fx:id="rootPane" prefHeight="650.0" prefWidth="950.0" stylesheets="@table.css"
             xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="libraryManagement.ui.listGenre.ListGenre">
@@ -13,10 +11,10 @@
                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <columns>
                 <TableColumn fx:id="idCol" maxWidth="250.0" minWidth="100.0" prefWidth="190.0" text="Id"/>
-                <TableColumn fx:id="titleCol" maxWidth="250.0" minWidth="100.0" prefWidth="190.0" text="Title"/>
-                <TableColumn fx:id="authorCol" maxWidth="250.0" minWidth="100.0" prefWidth="190.0" text="Author"/>
-                <TableColumn fx:id="isReadCol" maxWidth="250.0" minWidth="100.0" prefWidth="190.0" text="Read"/>
-                <TableColumn fx:id="isLentCol" maxWidth="250.0" minWidth="100.0" prefWidth="190.0" text="Lent"/>
+                <TableColumn fx:id="titleCol" maxWidth="250.0" minWidth="100.0" prefWidth="190.0" text="Naslov"/>
+                <TableColumn fx:id="authorCol" maxWidth="250.0" minWidth="100.0" prefWidth="190.0" text="Autor"/>
+                <TableColumn fx:id="isReadCol" maxWidth="250.0" minWidth="100.0" prefWidth="190.0" text="Žanr"/>
+                <TableColumn fx:id="isLentCol" maxWidth="250.0" minWidth="100.0" prefWidth="190.0" text="Pozajmljeno"/>
             </columns>
         </TableView>
     </children>
