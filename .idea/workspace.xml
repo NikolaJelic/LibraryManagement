@@ -2,39 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08097c92-c372-4dea-8e3b-94d726563b12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database.sqbpro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/database/DatabaseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/database/DatabaseHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/Main$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/libraryManagement/ui/main/MainController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/AuthorList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/AuthorList.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/GenreList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/GenreList.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/book.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/book_description.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/book_description.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/derby.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/list_author.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/list_author.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/list_book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/list_book.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/list_genre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/list_genre.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AuthorList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AuthorList.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/GenreList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GenreList.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/book.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/book_description.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/book_description.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/list_author.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/list_author.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/list_book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/list_book.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/list_genre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/list_genre.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libraryManagement/database/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libraryManagement/database/DatabaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libraryManagement/ui/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database.sqbpro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/derby.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,9 +230,9 @@
       <item itemvalue="Gradle.LibraryManagement [shadowJar]" />
       <item itemvalue="Gradle.LibraryManagement [clean]" />
       <item itemvalue="Gradle.LibraryManagement [jlink]" />
+      <item itemvalue="Gradle.LibraryManagement [run]" />
       <item itemvalue="JAR Application.LibraryManagement-1.0-SNAPSHOT-all.jar" />
       <item itemvalue="JAR Application.LibraryManagement-1.0-all.jar" />
-      <item itemvalue="Gradle.LibraryManagement [run]" />
     </list>
     <recent_temporary>
       <list>
@@ -271,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583521303208</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="committed with errors">
+      <created>1583688225729</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583688225729</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -282,6 +280,10 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="439" y="202" key="#Notifications" timestamp="1583688242758">
+      <screen x="0" y="30" width="1680" height="1020" />
+    </state>
+    <state x="439" y="202" key="#Notifications/0.30.1680.1020@0.30.1680.1020" timestamp="1583688242758" />
     <state x="294" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583671918249">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
@@ -291,75 +293,75 @@
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="522" y="333" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1680.1020@0.30.1680.1020" timestamp="1583511626711" />
-    <state x="399" y="44" key="CommitChangelistDialog2" timestamp="1583521302873">
+    <state x="399" y="44" key="CommitChangelistDialog2" timestamp="1583688225409">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="399" y="14" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1582499897880" />
-    <state x="399" y="44" key="CommitChangelistDialog2/0.30.1680.1020@0.30.1680.1020" timestamp="1583521302873" />
+    <state x="399" y="44" key="CommitChangelistDialog2/0.30.1680.1020@0.30.1680.1020" timestamp="1583688225409" />
     <state x="627" y="285" key="FileChooserDialogImpl" timestamp="1583519524424">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="627" y="285" key="FileChooserDialogImpl/0.30.1680.1020@0.30.1680.1020" timestamp="1583519524424" />
-    <state x="668" y="434" width="407" height="212" key="Github.CreateGistDialog" timestamp="1583686762582">
+    <state x="668" y="434" width="407" height="212" key="Github.CreateGistDialog" timestamp="1583875637196">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="668" y="400" width="368" height="209" key="Github.CreateGistDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1582558386746" />
-    <state x="668" y="434" width="407" height="212" key="Github.CreateGistDialog/0.30.1680.1020@0.30.1680.1020" timestamp="1583686762582" />
-    <state width="1638" height="247" key="GridCell.Tab.0.bottom" timestamp="1583686700887">
+    <state x="668" y="434" width="407" height="212" key="Github.CreateGistDialog/0.30.1680.1020@0.30.1680.1020" timestamp="1583875637196" />
+    <state width="1638" height="135" key="GridCell.Tab.0.bottom" timestamp="1583875724933">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state width="1637" height="53" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1582569289176" />
-    <state width="1638" height="247" key="GridCell.Tab.0.bottom/0.30.1680.1020@0.30.1680.1020" timestamp="1583686700887" />
-    <state width="1638" height="247" key="GridCell.Tab.0.center" timestamp="1583686700887">
+    <state width="1638" height="135" key="GridCell.Tab.0.bottom/0.30.1680.1020@0.30.1680.1020" timestamp="1583875724933" />
+    <state width="1638" height="135" key="GridCell.Tab.0.center" timestamp="1583875724933">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state width="1637" height="53" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1582569289175" />
-    <state width="1638" height="247" key="GridCell.Tab.0.center/0.30.1680.1020@0.30.1680.1020" timestamp="1583686700887" />
-    <state width="1638" height="247" key="GridCell.Tab.0.left" timestamp="1583686700887">
+    <state width="1638" height="135" key="GridCell.Tab.0.center/0.30.1680.1020@0.30.1680.1020" timestamp="1583875724933" />
+    <state width="1638" height="135" key="GridCell.Tab.0.left" timestamp="1583875724932">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state width="1637" height="53" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1582569289175" />
-    <state width="1638" height="247" key="GridCell.Tab.0.left/0.30.1680.1020@0.30.1680.1020" timestamp="1583686700887" />
-    <state width="1638" height="247" key="GridCell.Tab.0.right" timestamp="1583686700887">
+    <state width="1638" height="135" key="GridCell.Tab.0.left/0.30.1680.1020@0.30.1680.1020" timestamp="1583875724932" />
+    <state width="1638" height="135" key="GridCell.Tab.0.right" timestamp="1583875724933">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state width="1637" height="53" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1582569289176" />
-    <state width="1638" height="247" key="GridCell.Tab.0.right/0.30.1680.1020@0.30.1680.1020" timestamp="1583686700887" />
-    <state width="1638" height="310" key="GridCell.Tab.1.bottom" timestamp="1583517769591">
+    <state width="1638" height="135" key="GridCell.Tab.0.right/0.30.1680.1020@0.30.1680.1020" timestamp="1583875724933" />
+    <state width="1638" height="310" key="GridCell.Tab.1.bottom" timestamp="1583868550765">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state width="1637" height="785" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1582313087767" />
-    <state width="1638" height="310" key="GridCell.Tab.1.bottom/0.30.1680.1020@0.30.1680.1020" timestamp="1583517769591" />
-    <state width="1638" height="310" key="GridCell.Tab.1.center" timestamp="1583517769591">
+    <state width="1638" height="310" key="GridCell.Tab.1.bottom/0.30.1680.1020@0.30.1680.1020" timestamp="1583868550765" />
+    <state width="1638" height="310" key="GridCell.Tab.1.center" timestamp="1583868550764">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state width="1637" height="785" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1582313087767" />
-    <state width="1638" height="310" key="GridCell.Tab.1.center/0.30.1680.1020@0.30.1680.1020" timestamp="1583517769591" />
-    <state width="1638" height="310" key="GridCell.Tab.1.left" timestamp="1583517769591">
+    <state width="1638" height="310" key="GridCell.Tab.1.center/0.30.1680.1020@0.30.1680.1020" timestamp="1583868550764" />
+    <state width="1638" height="310" key="GridCell.Tab.1.left" timestamp="1583868550764">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state width="1637" height="785" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1582313087767" />
-    <state width="1638" height="310" key="GridCell.Tab.1.left/0.30.1680.1020@0.30.1680.1020" timestamp="1583517769591" />
-    <state width="1638" height="310" key="GridCell.Tab.1.right" timestamp="1583517769591">
+    <state width="1638" height="310" key="GridCell.Tab.1.left/0.30.1680.1020@0.30.1680.1020" timestamp="1583868550764" />
+    <state width="1638" height="310" key="GridCell.Tab.1.right" timestamp="1583868550765">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state width="1637" height="785" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1582313087767" />
-    <state width="1638" height="310" key="GridCell.Tab.1.right/0.30.1680.1020@0.30.1680.1020" timestamp="1583517769591" />
+    <state width="1638" height="310" key="GridCell.Tab.1.right/0.30.1680.1020@0.30.1680.1020" timestamp="1583868550765" />
     <state x="320" y="111" key="SettingsEditor" timestamp="1583519526617">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="320" y="80" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1582490775582" />
     <state x="320" y="111" key="SettingsEditor/0.30.1680.1020@0.30.1680.1020" timestamp="1583519526617" />
-    <state x="432" y="267" key="Vcs.Push.Dialog.v2" timestamp="1583521305307">
+    <state x="432" y="267" key="Vcs.Push.Dialog.v2" timestamp="1583688227728">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="432" y="235" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1582499903030" />
-    <state x="432" y="267" key="Vcs.Push.Dialog.v2/0.30.1680.1020@0.30.1680.1020" timestamp="1583521305307" />
-    <state x="516" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1583665013924">
+    <state x="432" y="267" key="Vcs.Push.Dialog.v2/0.30.1680.1020@0.30.1680.1020" timestamp="1583688227728" />
+    <state x="516" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1583867223440">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="516" y="330" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1582531334070" />
-    <state x="516" y="363" key="com.intellij.ide.util.TipDialog/0.30.1680.1020@0.30.1680.1020" timestamp="1583665013924" />
+    <state x="516" y="363" key="com.intellij.ide.util.TipDialog/0.30.1680.1020@0.30.1680.1020" timestamp="1583867223440" />
     <state x="509" y="233" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583515076729">
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
@@ -377,5 +379,39 @@
       <screen x="0" y="30" width="1680" height="1020" />
     </state>
     <state x="503" y="251" key="search.everywhere.popup/0.30.1680.1020@0.30.1680.1020" timestamp="1583686751651" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/libraryManagement/ui/main/Main.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/libraryManagement/database/DatabaseHandler.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/libraryManagement/database/DatabaseHandler.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/libraryManagement/database/DatabaseHandler.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/libraryManagement/database/DatabaseHandler.java</url>
+          <line>37</line>
+          <properties class="libraryManagement.database.DatabaseHandler" method="createConnection">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
-
-<AnchorPane fx:id="rootPane" prefHeight="650.0" prefWidth="950.0" styleClass="root" stylesheets="@home-page.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryManagement.ui.main.MainController">
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="rootPane" prefHeight="650.0" prefWidth="950.0" styleClass="root" stylesheets="@home-page.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="libraryManagement.ui.main.MainController">
     <children>
-        <BorderPane prefHeight="650.0" prefWidth="950.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <BorderPane prefHeight="650.0" prefWidth="950.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <left>
                 <VBox prefHeight="650.0" prefWidth="150.0" BorderPane.alignment="CENTER">
                     <children>
-                        <Button fx:id="addBookButton" mnemonicParsing="false" onAction="#addBook" prefHeight="162.0" prefWidth="150.0" text="Dodaj Knjigu">
+                        <Button fx:id="addBookButton" mnemonicParsing="false" onAction="#addBook" prefHeight="162.0"
+                                prefWidth="150.0" text="Dodaj Knjigu">
                             <font>
-                                <Font name="Manjari Regular" size="15.0" />
+                                <Font name="Manjari Regular" size="15.0"/>
                             </font>
                             <padding>
-                                <Insets bottom="2.0" top="2.0" />
+                                <Insets bottom="2.0" top="2.0"/>
                             </padding>
                         </Button>
-                        <Button fx:id="bookListButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadBookTable" prefHeight="162.0" prefWidth="150.0" text="Knjige">
+                        <Button fx:id="bookListButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false"
+                                onAction="#loadBookTable" prefHeight="162.0" prefWidth="150.0" text="Knjige">
                             <font>
-                                <Font name="Manjari Regular" size="15.0" />
+                                <Font name="Manjari Regular" size="15.0"/>
                             </font>
                             <padding>
-                                <Insets bottom="2.0" top="2.0" />
+                                <Insets bottom="2.0" top="2.0"/>
                             </padding>
                         </Button>
-                        <Button fx:id="genreListButton" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onAction="#loadGenreTable" prefHeight="162.0" prefWidth="150.0" text="Žanrovi">
+                        <Button fx:id="genreListButton" layoutX="10.0" layoutY="190.0" mnemonicParsing="false"
+                                onAction="#loadGenreTable" prefHeight="162.0" prefWidth="150.0" text="Žanrovi">
                             <font>
-                                <Font name="Manjari Regular" size="15.0" />
+                                <Font name="Manjari Regular" size="15.0"/>
                             </font>
                             <padding>
-                                <Insets bottom="2.0" top="2.0" />
+                                <Insets bottom="2.0" top="2.0"/>
                             </padding>
                         </Button>
-                        <Button fx:id="authorListButton" layoutX="10.0" layoutY="280.0" mnemonicParsing="false" onAction="#loadAuthorTable" prefHeight="162.0" prefWidth="150.0" text="Autori">
+                        <Button fx:id="authorListButton" layoutX="10.0" layoutY="280.0" mnemonicParsing="false"
+                                onAction="#loadAuthorTable" prefHeight="162.0" prefWidth="150.0" text="Autori">
                             <font>
-                                <Font name="Manjari Regular" size="15.0" />
+                                <Font name="Manjari Regular" size="15.0"/>
                             </font>
                             <padding>
-                                <Insets bottom="2.0" top="2.0" />
+                                <Insets bottom="2.0" top="2.0"/>
                             </padding>
                         </Button>
                </children>
@@ -55,39 +55,46 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                   <Pane layoutX="175.0" layoutY="166.0" prefHeight="620.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                   <Pane layoutX="175.0" layoutY="166.0" prefHeight="620.0" prefWidth="800.0"
+                         AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                         AnchorPane.topAnchor="0.0">
                        <children>
                            <HBox alignment="CENTER_LEFT" layoutX="-3.0" prefHeight="250.0" prefWidth="805.0">
                                <children>
-                                   <TextField fx:id="searchBox" minHeight="35.0" onAction="#searchBook" prefWidth="200.0" promptText="Unesite  naslov knjige">
+                                   <TextField fx:id="searchBox" minHeight="35.0" onAction="#searchBook"
+                                              prefWidth="200.0" promptText="Unesite  naslov knjige">
                                        <HBox.margin>
-                                           <Insets left="100.0" top="70.0" />
+                                           <Insets left="100.0" top="70.0"/>
                                        </HBox.margin>
                                    </TextField>
                                    <VBox prefHeight="250.0" prefWidth="503.0">
                                        <children>
-                                           <Text fx:id="bookIDDisplay" strokeType="OUTSIDE" strokeWidth="0.0" text="ID knjige" wrappingWidth="250.0">
+                                           <Text fx:id="bookIDDisplay" strokeType="OUTSIDE" strokeWidth="0.0"
+                                                 text="ID knjige" wrappingWidth="250.0">
                                                <VBox.margin>
-                                                   <Insets left="150.0" top="70.0" />
+                                                   <Insets left="150.0" top="70.0"/>
                                                </VBox.margin>
                                                <font>
-                                                   <Font size="20.0" />
+                                                   <Font size="20.0"/>
                                                </font>
                                            </Text>
-                                           <Text fx:id="authorDisplay" strokeType="OUTSIDE" strokeWidth="0.0" text="Autor" wrappingWidth="250.0">
+                                           <Text fx:id="authorDisplay" strokeType="OUTSIDE" strokeWidth="0.0"
+                                                 text="Autor" wrappingWidth="250.0">
                                                <VBox.margin>
-                                                   <Insets left="150.0" top="60.0" />
+                                                   <Insets left="150.0" top="60.0"/>
                                                </VBox.margin>
                                                <font>
-                                                   <Font size="20.0" />
+                                                   <Font size="20.0"/>
                                                </font>
                                            </Text>
-                                           <Text fx:id="genreDisplay" layoutX="160.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Žanr" wrappingWidth="250.0">
+                                           <Text fx:id="genreDisplay" layoutX="160.0" layoutY="192.0"
+                                                 strokeType="OUTSIDE" strokeWidth="0.0" text="Žanr"
+                                                 wrappingWidth="250.0">
                                                <font>
-                                                   <Font size="20.0" />
+                                                   <Font size="20.0"/>
                                                </font>
                                                <VBox.margin>
-                                                   <Insets left="150.0" top="60.0" />
+                                                   <Insets left="150.0" top="60.0"/>
                                                </VBox.margin>
                                            </Text>
                                       </children>

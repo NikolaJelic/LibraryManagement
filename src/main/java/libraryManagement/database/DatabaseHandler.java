@@ -23,14 +23,14 @@ public class DatabaseHandler {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //   setBookTable();
+        createNewTable();
+
     }
 
     public static DatabaseHandler getInstance() throws SQLException {
         if (handler == null) {
             handler = new DatabaseHandler();
         }
-        createNewTable();
         return handler;
     }
 
@@ -52,7 +52,7 @@ public class DatabaseHandler {
                 }
 
             } catch (SQLException e) {
-                System.out.println(e.getMessage());
+                e.printStackTrace();
             }
         }
 
@@ -63,7 +63,7 @@ public class DatabaseHandler {
         String url = "jdbc:sqlite:database.db";
 
         // SQL statement for creating a new table
-        String sql = "CREATE TABLE IF NOT EXISTS BOOK (\n"
+        String sql = "CREATE TABLE  BOOK (\n"
                 + "   bookId integer NOT NULL PRIMARY KEY AUTOINCREMENT,\n"
                 + "   bookTitle VARCHAR(200),\n"
                 + "   bookGenre VARCHAR(200),\n"
@@ -71,7 +71,7 @@ public class DatabaseHandler {
                 + "   bookDescription TEXT DEFAULT 'opis'\n"
                 + "   isRead BOOLEAN DEFAULT 'false',\n"
                 + "   isLent BOOLEAN DEFAULT 'false',\n"
-                + "   bookLender VARCHAR(200) DEFAULT 'false'\n"
+                + "   bookLender VARCHAR(200) DEFAULT 'false'"
 
 
                 + ");";
@@ -81,7 +81,7 @@ public class DatabaseHandler {
             // create a new table
             stmt.execute(sql);
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 

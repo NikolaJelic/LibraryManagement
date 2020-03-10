@@ -46,7 +46,7 @@ public class Main extends Application {
                 SQLException se) {
             // SQL State XJO15 and SQLCode 50000 mean an OK shutdown.
             if (!(se.getErrorCode() == 50000) && (se.getSQLState().equals("XJ015")))
-                System.err.println(se);
+                se.printStackTrace();
         }
     }
 
