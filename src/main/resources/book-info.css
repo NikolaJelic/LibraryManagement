@@ -25,6 +25,11 @@
   -fx-text-size: 25;
   }
   .button:hover{
-    -fx-background-color: #62727b;
+-fx-background-color: #cf6679;
 
+  }
+  .button:pressed{
+  -fx-background-color: #ff96a8;
+  -fx-padding: 5 5 5 5;
+      -fx-text-fill: #ffffff;
   }

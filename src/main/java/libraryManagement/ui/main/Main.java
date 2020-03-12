@@ -17,8 +17,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/main.fxml"));
-        String currentDirectory = System.getProperty("user.dir");
-        System.out.println("user.dir: " + currentDirectory);
+
         Scene scene = new Scene(root);
         //   scene.getStylesheets().add("/libraryManagement/resources/home-page.css");
 

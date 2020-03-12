@@ -69,12 +69,13 @@ public class MainController implements Initializable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM BOOK WHERE bookTitle = ?");
+        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM BOOK WHERE bookTitle = ? COLLATE NOCASE");
         stmt.setString(1, searchBook);
         ResultSet rs = stmt.executeQuery();
 
         if (rs.next()) {
             String title = rs.getString("bookTitle").toLowerCase();
+            System.out.println(rs.getString("bookTitle").toLowerCase());
             if (title.equals(searchBook)) {
                 String id = rs.getString("bookID");
                 String genre = rs.getString("bookGenre");
@@ -83,7 +84,8 @@ public class MainController implements Initializable {
                 bookIDDisplay.setText(id);
                 genreDisplay.setText(genre);
                 authorDisplay.setText(author);
-
+                stmt.close();
+                conn.close();
             }
         } else if (!rs.next()) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -91,9 +93,9 @@ public class MainController implements Initializable {
             alert.setContentText("Book not found.");
             alert.showAndWait();
 
-            bookIDDisplay.setText("Book ID");
-            genreDisplay.setText("Genre");
-            authorDisplay.setText("Author");
+            bookIDDisplay.setText("ID Knjige");
+            genreDisplay.setText("Zanr");
+            authorDisplay.setText("Autor");
         }
 
 

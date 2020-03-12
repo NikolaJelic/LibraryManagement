@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="rootPane" prefHeight="100.0" prefWidth="400.0" stylesheets="@lender.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="libraryManagement.ui.book.Lender">
+   <children>
+      <HBox layoutX="28.0" prefHeight="100.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0"
+            AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="inputBox" prefHeight="100.0" prefWidth="316.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" top="5.0"/>
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveLender" prefHeight="40.0" prefWidth="95.0"
+                    text="Sačuvaj">
+               <HBox.margin>
+                  <Insets bottom="30.0" left="5.0" right="5.0" top="30.0"/>
+               </HBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets/>
+         </opaqueInsets>
+         <effect>
+            <Blend/>
+         </effect>
+      </HBox>
+   </children>
+</AnchorPane>

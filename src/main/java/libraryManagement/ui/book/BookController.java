@@ -48,6 +48,7 @@ public class BookController implements Initializable {
 
     String description;
     private String selectedBookId;
+    String lender;
 
     public void setSelectedBookId(String selectedBookId) {
         this.selectedBookId = selectedBookId;
@@ -58,8 +59,19 @@ public class BookController implements Initializable {
         bookGenre.setText(genre);
         bookAuthor.setText(author);
         bookID.setText(selectedBookId);
-        isLentText.setText(isLent.toString());
-        isReadText.setText(isRead.toString());
+
+        //   String lender = " ";
+        if (isLent == true) {
+            isLentText.setText(lender);
+        } else {
+            isLentText.setText("Ne");
+        }
+        if (isRead) {
+            isReadText.setText("Da");
+        } else {
+            isReadText.setText("Ne");
+        }
+
         descriptionBox.setText(description);
         System.out.println(description);
     }
@@ -68,12 +80,8 @@ public class BookController implements Initializable {
     public String getselectedBookId() {
         return selectedBookId;
     }
-
-
     public BookController() throws SQLException {
     }
-
-
     public void isReadChange(ActionEvent actionEvent) {
 
         if (isRead) {
@@ -85,9 +93,7 @@ public class BookController implements Initializable {
                 pstmt.setBoolean(1, isRead);
                 pstmt.setInt(2, Integer.parseInt(id));
                 pstmt.executeUpdate();
-
-                isReadText.setText(isRead.toString());
-
+                isReadText.setText("Ne");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -100,8 +106,7 @@ public class BookController implements Initializable {
                 pstmt.setBoolean(1, isRead);
                 pstmt.setInt(2, Integer.parseInt(id));
                 pstmt.executeUpdate();
-                isReadText.setText(isRead.toString());
-
+                isReadText.setText("Da");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -109,48 +114,57 @@ public class BookController implements Initializable {
 
     }
 
-
-    public void isLentChange(ActionEvent actionEvent) {
-        if (isLent == true) {
+    public void isLentChange(ActionEvent actionEvent) throws SQLException {
+        if (isLent) {
             isLent = false;
             String sql = "update BOOK set isLent=? where bookId=?";
-
-
             try (Connection conn = DriverManager.getConnection(DB_URL);
                  PreparedStatement pstmt = conn.prepareStatement(sql)) {
                 pstmt.setBoolean(1, isLent);
                 pstmt.setInt(2, Integer.parseInt(id));
                 pstmt.executeUpdate();
-
-                isLentText.setText(isLent.toString());
-
+                isLentText.setText("Ne");
+                pstmt.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        } else if (isLent == false) {
+        } else if (!isLent) {
             isLent = true;
             String sql = "update BOOK set isLent=? where bookId=?";
-
+            try {
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/lender.fxml"));
+                AnchorPane page = loader.load();
+                Lender lender = loader.getController();
+                lender.setParentBook(selectedBookId);
+                Stage stage = new Stage();
+                stage.setScene(new Scene(page));
+                stage.setTitle("Kome je knjiga pozajmljena?");
+                stage.setResizable(false);
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             try (Connection conn = DriverManager.getConnection(DB_URL);
-                 PreparedStatement pstmt = conn.prepareStatement(sql)) {
-                pstmt.setBoolean(1, isLent);
-                pstmt.setInt(2, Integer.parseInt(id));
-                pstmt.executeUpdate();
-                isLentText.setText(isLent.toString());
-
+                 PreparedStatement statement = conn.prepareStatement(sql)) {
+                statement.setBoolean(1, isLent);
+                statement.setInt(2, Integer.parseInt(id));
+                statement.executeUpdate();
+                loadData();
+                isLentText.setText(lender);
+                statement.close();
+                conn.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+
+
         }
     }
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
         createConnection();
-
     }
-
     private void createConnection() {
         try {
             conn = DriverManager.getConnection(DB_URL);
@@ -158,8 +172,6 @@ public class BookController implements Initializable {
             e.printStackTrace();
         }
     }
-
-
     private void loadData() {
         // DatabaseHandler handler = DatabaseHandler.getInstance();
         String qu = "SELECT * FROM BOOK";
@@ -170,7 +182,6 @@ public class BookController implements Initializable {
                 if (selectedBookId == null) {
                 }
                 id = rs.getString("bookId");
-
                 if (id.equals(selectedBookId)) {
                      title = rs.getString("bookTitle");
 
@@ -179,22 +190,15 @@ public class BookController implements Initializable {
                     isRead = rs.getBoolean("isRead");
                     isLent = rs.getBoolean("isLent");
                     description = rs.getString("bookDescription");
-
-
+                    lender = rs.getString("bookLender");
                 }
-
-
             }
         } catch (SQLException ex) {
             Logger.getLogger(ListGenreController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
-
     public void editDescription(ActionEvent actionEvent) {
         try {
-
-
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/book_description.fxml"));
             AnchorPane page = loader.load();
@@ -210,14 +214,11 @@ public class BookController implements Initializable {
             e.printStackTrace();
         }
     }
-
     public void refreshDescription(ActionEvent actionEvent) {
         loadData();
         descriptionBox.setText(description);
 
     }
-
-
     public void deleteBook(ActionEvent actionEvent) {
         String sql = "DELETE FROM BOOK WHERE bookId = ?";
 
