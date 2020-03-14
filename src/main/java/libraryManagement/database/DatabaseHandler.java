@@ -1,11 +1,20 @@
 package libraryManagement.database;
 
 
+import libraryManagement.ui.main.LibraryManagement;
 import org.sqlite.SQLiteConfig;
 import org.sqlite.SQLiteDataSource;
 
 import javax.swing.*;
+import java.io.File;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.*;
+import java.util.Arrays;
+import java.util.List;
 
 public class DatabaseHandler {
 
@@ -16,15 +25,36 @@ public class DatabaseHandler {
     private static Connection conn = null;
     private static Statement stmt = null;
 
+    URL sourceDirectoryPath = LibraryManagement.class.getProtectionDomain().getCodeSource().getLocation();
+    private Path SlikePath;
+
     private DatabaseHandler() throws SQLException {
         try {
             createConnection();
             createNewTable();
+            File jarLocation = new File(sourceDirectoryPath.toURI());
+            File Slike = new File(jarLocation.getParentFile(), "Slike");
+            SlikePath = Paths.get(Slike.getAbsolutePath());
+            jarLocation.mkdir();
+            boolean dirCreated = Slike.mkdirs();
+            if (dirCreated) {
+                System.out.println("folder napravljen");
+            } else {
+                System.out.println("nije napravljen");
+            }
 
+            List<String> lines = Arrays.asList("U ovaj folder se automatski dodaju sve slike.", "Mijenjanje naziva ili lokacije ovog foldera ili njegovog sadrzaja moze izazvati probleme u radu programa!");
+            Path file = Paths.get(Slike.getAbsolutePath() + "//Napomena.txt");
+            Files.write(file, lines, StandardCharsets.UTF_8);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
+
+    }
+
+    public Path getSlikePath() {
+        return SlikePath;
     }
 
     public static DatabaseHandler getInstance() throws SQLException {
@@ -34,23 +64,6 @@ public class DatabaseHandler {
         return handler;
     }
 
-
-    /*  public static void createConnection(String dbName) throws Exception {
-          String url = "jdbc:sqlite:" + dbName;
-          File file = new File(dbName);
-
-              try (Connection conn = DriverManager.getConnection(url)) {
-                  if (conn != null) {
-                      DatabaseMetaData meta = conn.getMetaData();
-                      System.out.println("The driver name is " + meta.getDriverName());
-                      System.out.println("A new database has been created.");
-                  }
-              } catch (SQLException e) {
-                  e.printStackTrace();
-              }
-
-
-      }*/
     public void createNewTable() {
         String url = "jdbc:sqlite:database.db";
         String sql = "CREATE TABLE IF NOT EXISTS BOOK (\n"
@@ -58,9 +71,10 @@ public class DatabaseHandler {
                 + "   bookTitle VARCHAR(200),\n"
                 + "   bookGenre VARCHAR(200),\n"
                 + "   bookAuthor VARCHAR(200),\n"
+                + "   imagePath VARCHAR(200),\n"
                 + "   bookDescription TEXT DEFAULT 'opis',\n"
-                + "   isRead BOOLEAN DEFAULT 'false',\n"
-                + "   isLent BOOLEAN DEFAULT 'false',\n"
+                + "   isRead BOOLEAN DEFAULT 'ne',\n"
+                + "   isLent BOOLEAN DEFAULT 'ne',\n"
                 + "   bookLender VARCHAR(200) DEFAULT 'false'"
                 + ");";
 
@@ -71,31 +85,6 @@ public class DatabaseHandler {
             e.printStackTrace();
         }
     }
-
-    //     bookId INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1,  INCREMENT BY 1) ,
-//
- /*   private void setBookTable() throws SQLException {
-        String TABLE_NAME = "BOOK";
-            stmt = conn.createStatement();
-    //        DatabaseMetaData dbm = conn.getMetaData();
-      //      ResultSet tables = dbm.getTables(null, null, TABLE_NAME.toUpperCase(), null);
-            System.out.println("this is called");
-        try ( conn = DriverManager.getConnection(DB_URL)
-                stmt.execute("CREATE TABLE " + TABLE_NAME + "("
-                        + "     bookId INTEGER  not null  GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) ,\n "
-                        + "     bookTitle varchar(200), \n"
-                        + "     bookAuthor varchar(200),\n"
-                        + "     bookGenre varchar(200),\n"
-                        + "     bookDescription varchar(1000) default 'Description '  ,\n"
-                        + "     isRead boolean default false,\n"
-                        + "     isLent boolean default false,\n"
-                        + "     CONSTRAINT primary_key PRIMARY KEY (bookId) "
-                        + ")");
-                System.out.println("table is made");
-
-
-
-    }*/
 
     private void createConnection() throws SQLException {
         SQLiteConfig sqliteConfig = new SQLiteConfig();

@@ -53,7 +53,7 @@ public class AddBookController implements Initializable {
         if (bookAuthor.isEmpty() || bookGenre.isEmpty() || bookTitle.isEmpty()) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
-            alert.setContentText("Please fill all fields.");
+            alert.setContentText("Popunite sva polja.");
             alert.showAndWait();
             return;
         }
@@ -67,13 +67,13 @@ public class AddBookController implements Initializable {
         if (databaseHandler.execAction(qu)) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setHeaderText(null);
-            alert.setContentText("Book has been added.");
+            alert.setContentText("Knjiga je dodata.");
             alert.showAndWait();
 
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
-            alert.setContentText("An error has occurred - could not add book.");
+            alert.setContentText(" Došlo je do greške.");
             alert.showAndWait();
         }
     }

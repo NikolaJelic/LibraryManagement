@@ -7,14 +7,21 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import libraryManagement.database.DatabaseHandler;
 import libraryManagement.ui.listGenre.ListGenreController;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Path;
 import java.sql.*;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -22,6 +29,8 @@ import java.util.logging.Logger;
 
 public class BookController implements Initializable {
     public Text bookID;
+    public ImageView coverImage;
+    public Button selectImageButton;
     DatabaseHandler handler = DatabaseHandler.getInstance();
     private static final String DB_URL = "jdbc:sqlite:database.db";
     private static Connection conn = null;
@@ -44,7 +53,8 @@ public class BookController implements Initializable {
     String author;
     Boolean isRead;
     Boolean isLent;
-
+    String coverPath;
+    Image cover;
 
     String description;
     private String selectedBookId;
@@ -59,9 +69,19 @@ public class BookController implements Initializable {
         bookGenre.setText(genre);
         bookAuthor.setText(author);
         bookID.setText(selectedBookId);
+        System.out.println(coverPath + "Path ");
+        try {
+            if (coverPath != null) {
+                cover = new Image(new FileInputStream(coverPath));
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        coverImage.setImage(cover);
 
         //   String lender = " ";
-        if (isLent == true) {
+        if (isLent) {
             isLentText.setText(lender);
         } else {
             isLentText.setText("Ne");
@@ -183,7 +203,7 @@ public class BookController implements Initializable {
                 }
                 id = rs.getString("bookId");
                 if (id.equals(selectedBookId)) {
-                     title = rs.getString("bookTitle");
+                    title = rs.getString("bookTitle");
 
                     genre = rs.getString("bookGenre");
                     author = rs.getString("bookAuthor");
@@ -191,6 +211,9 @@ public class BookController implements Initializable {
                     isLent = rs.getBoolean("isLent");
                     description = rs.getString("bookDescription");
                     lender = rs.getString("bookLender");
+                    coverPath = rs.getString("imagePath");
+                    System.out.println(coverPath + "Path ");
+
                 }
             }
         } catch (SQLException ex) {
@@ -232,12 +255,46 @@ public class BookController implements Initializable {
 
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setHeaderText(null);
-            alert.setContentText("Book "+ title + " has been deleted.");
+            alert.setContentText("Book " + title + " has been deleted.");
             alert.showAndWait();
             Stage stage = (Stage) rootPane.getScene().getWindow();
             stage.close();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
+        }
+    }
+
+    public void selectImage(ActionEvent actionEvent) {
+        FileChooser chooser = new FileChooser();
+        chooser.setTitle("Open File");
+        chooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"));
+        File selectedFile = chooser.showOpenDialog(rootPane.getScene().getWindow());
+
+        if (selectedFile != null) {
+            System.out.println("Image selected");
+            //adding selected image path to the database so that the image can be found
+            try (Connection conn = DriverManager.getConnection(DB_URL);
+                 PreparedStatement pstmt = conn.prepareStatement("update BOOK set imagePath=? where bookId=?")) {
+
+                System.out.println(selectedFile.getAbsolutePath());
+                Path slikePath = DatabaseHandler.getInstance().getSlikePath();
+                System.out.println(slikePath);
+                selectedFile.renameTo(new File(slikePath + "//" + id));
+                String pathjFordatabase = slikePath + "//" + id;
+                System.out.println(pathjFordatabase + "pfdb");
+                pstmt.setString(1, pathjFordatabase);
+                pstmt.setInt(2, Integer.parseInt(id));
+                pstmt.executeUpdate();
+                System.out.println(coverPath + "Path ");
+                cover = new Image(new FileInputStream(pathjFordatabase));
+                coverImage.setImage(cover);
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+
         }
     }
 }
