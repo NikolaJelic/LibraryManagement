@@ -36,8 +36,8 @@
                                   </font>
                                   <HBox.margin>
                                       <Insets/>
-                             </HBox.margin>
-                         </Text>
+                                  </HBox.margin>
+                              </Text>
                               <Text fx:id="bookID" fill="#e0e0e0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID"
                                     translateX="105.0" wrappingWidth="50.0">
                                   <font>

@@ -32,7 +32,7 @@ public class BookController implements Initializable {
     public ImageView coverImage;
     public Button selectImageButton;
     DatabaseHandler handler = DatabaseHandler.getInstance();
-    private static final String DB_URL = "jdbc:sqlite:database.db";
+    private static final String DB_URL = "jdbc:sqlite:./Biblioteka/database.db";
     private static Connection conn = null;
     private static Statement stmt = null;
     public Button isReadToggle;
@@ -268,7 +268,7 @@ public class BookController implements Initializable {
         FileChooser chooser = new FileChooser();
         chooser.setTitle("Open File");
         chooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"));
+                new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif", "*.jpeg"));
         File selectedFile = chooser.showOpenDialog(rootPane.getScene().getWindow());
 
         if (selectedFile != null) {

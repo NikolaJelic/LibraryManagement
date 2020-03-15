@@ -20,22 +20,23 @@ public class DatabaseHandler {
 
     private static DatabaseHandler handler = null;
 
-    private static final String DB_URL = "jdbc:sqlite:database.db";
+
 
     private static Connection conn = null;
     private static Statement stmt = null;
-
+    private static final String DB_URL = "jdbc:sqlite:./Biblioteka/database.db";
     URL sourceDirectoryPath = LibraryManagement.class.getProtectionDomain().getCodeSource().getLocation();
     private Path SlikePath;
 
     private DatabaseHandler() throws SQLException {
         try {
-            createConnection();
-            createNewTable();
-            File jarLocation = new File(sourceDirectoryPath.toURI());
-            File Slike = new File(jarLocation.getParentFile(), "Slike");
+
+            //File jarLocation = new File(sourceDirectoryPath.toURI());
+            //  System.out.println(jarLocation.getAbsolutePath());
+            // File Slike = new File(jarLocation.getParentFile(), "Slike");
+            File Slike = new File("./Biblioteka/Slike");
             SlikePath = Paths.get(Slike.getAbsolutePath());
-            jarLocation.mkdir();
+            //jarLocation.mkdir();
             boolean dirCreated = Slike.mkdirs();
             if (dirCreated) {
                 System.out.println("folder napravljen");
@@ -50,7 +51,8 @@ public class DatabaseHandler {
             e.printStackTrace();
         }
 
-
+        createConnection();
+        createNewTable();
     }
 
     public Path getSlikePath() {
@@ -65,7 +67,7 @@ public class DatabaseHandler {
     }
 
     public void createNewTable() {
-        String url = "jdbc:sqlite:database.db";
+        String url = "jdbc:sqlite:./Biblioteka/database.db";
         String sql = "CREATE TABLE IF NOT EXISTS BOOK (\n"
                 + "   bookId integer NOT NULL PRIMARY KEY AUTOINCREMENT,\n"
                 + "   bookTitle VARCHAR(200),\n"

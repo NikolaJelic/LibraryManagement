@@ -40,7 +40,7 @@ public class Main extends Application {
 
     public void shutdown() {
         try {
-            DriverManager.getConnection("jdbc:sqlite:database.db");
+            DriverManager.getConnection("jdbc:sqlite:./Biblioteka/database.db");
         } catch (
                 SQLException se) {
             // SQL State XJO15 and SQLCode 50000 mean an OK shutdown.

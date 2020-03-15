@@ -26,7 +26,7 @@ public class Lender {
     public void saveLender(ActionEvent actionEvent) {
         String lender = inputBox.getText();
         try {
-            conn = DriverManager.getConnection("jdbc:sqlite:database.db");
+            conn = DriverManager.getConnection("jdbc:sqlite:./Biblioteka/database.db");
         } catch (SQLException e) {
             e.printStackTrace();
         }
