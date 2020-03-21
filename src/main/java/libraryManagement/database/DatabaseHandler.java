@@ -77,7 +77,7 @@ public class DatabaseHandler {
                 + "   bookDescription TEXT DEFAULT 'opis',\n"
                 + "   isRead BOOLEAN DEFAULT 'ne',\n"
                 + "   isLent BOOLEAN DEFAULT 'ne',\n"
-                + "   bookLender VARCHAR(200) DEFAULT 'false'"
+                + "   bookLender VARCHAR(200) DEFAULT 'Ime pozajmioca'"
                 + ");";
 
         try (Connection conn = DriverManager.getConnection(url);

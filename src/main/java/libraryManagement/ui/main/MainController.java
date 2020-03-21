@@ -37,7 +37,7 @@ public class MainController implements Initializable {
     public AnchorPane rootPane;
     Connection conn = null;
     Image book;
-
+    public static String searchBook;
     DatabaseHandler handler = DatabaseHandler.getInstance();
 
     public MainController() throws SQLException {
@@ -64,7 +64,7 @@ public class MainController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         {
-            book = new Image("/book.png");
+            book = new Image("/icon.png");
         }
         image.setImage(book);
     }
@@ -84,40 +84,40 @@ public class MainController implements Initializable {
     }
 
     public void searchBook(ActionEvent actionEvent) throws SQLException {
-        String searchBook = searchBox.getText().toLowerCase();
+        searchBook = searchBox.getText().toLowerCase();
 
         try {
             conn = DriverManager.getConnection("jdbc:sqlite:./Biblioteka/database.db");
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM BOOK WHERE bookTitle = ? COLLATE NOCASE");
+        PreparedStatement stmt = conn.prepareStatement("SELECT bookTitle FROM BOOK WHERE bookTitle = ? COLLATE NOCASE");
         stmt.setString(1, searchBook);
         ResultSet rs = stmt.executeQuery();
 
         if (rs.next()) {
-            String title = rs.getString("bookTitle").toLowerCase();
-            System.out.println(rs.getString("bookTitle").toLowerCase());
-            if (title.equals(searchBook)) {
-                String id = rs.getString("bookID");
-                String genre = rs.getString("bookGenre");
-                String author = rs.getString("bookAuthor");
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/search_book.fxml"));
+                Parent parent = fxmlLoader.load();
+                Stage stage = new Stage(StageStyle.DECORATED);
+                stage.setTitle(searchBook);
+                stage.setScene(new Scene(parent));
+                stage.setResizable(false);
 
-                bookIDDisplay.setText(id);
-                genreDisplay.setText(genre);
-                authorDisplay.setText(author);
-                stmt.close();
-                conn.close();
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
+            stmt.close();
+            conn.close();
+
+
         } else if (!rs.next()) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setContentText("Book not found.");
             alert.showAndWait();
 
-            bookIDDisplay.setText("ID Knjige");
-            genreDisplay.setText("Zanr");
-            authorDisplay.setText("Autor");
         }
 
 

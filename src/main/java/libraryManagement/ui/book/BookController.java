@@ -286,6 +286,8 @@ public class BookController implements Initializable {
                 pstmt.setString(1, pathjFordatabase);
                 pstmt.setInt(2, Integer.parseInt(id));
                 pstmt.executeUpdate();
+                pstmt.close();
+                conn.close();
                 System.out.println(coverPath + "Path ");
                 cover = new Image(new FileInputStream(pathjFordatabase));
                 coverImage.setImage(cover);

@@ -62,61 +62,33 @@
                        <children>
                            <HBox alignment="CENTER_LEFT" layoutX="-3.0" prefHeight="250.0" prefWidth="805.0">
                                <children>
-                                   <TextField fx:id="searchBox" minHeight="35.0" onAction="#searchBook"
-                                              prefWidth="200.0" promptText="Unesite  naslov knjige">
-                                       <HBox.margin>
-                                           <Insets left="100.0" top="70.0"/>
-                                       </HBox.margin>
-                                   </TextField>
-                                   <VBox prefHeight="232.0" prefWidth="498.0">
+                                   <VBox alignment="CENTER" prefHeight="391.0" prefWidth="805.0">
                                        <children>
-                                           <Text fx:id="bookIDDisplay" strokeType="OUTSIDE" strokeWidth="0.0"
-                                                 text="ID knjige" wrappingWidth="250.0">
+                                           <ImageView fx:id="image" fitHeight="302.0" fitWidth="400.0"
+                                                      pickOnBounds="true" preserveRatio="true">
                                                <VBox.margin>
-                                                   <Insets left="150.0" top="70.0"/>
+                                                   <Insets bottom="70.0" top="70.0"/>
                                                </VBox.margin>
-                                               <font>
-                                                   <Font size="20.0"/>
-                                               </font>
-                                           </Text>
-                                           <Text fx:id="authorDisplay" strokeType="OUTSIDE" strokeWidth="0.0"
-                                                 text="Autor" wrappingWidth="250.0">
-                                               <VBox.margin>
-                                                   <Insets left="150.0" top="60.0"/>
-                                               </VBox.margin>
-                                               <font>
-                                                   <Font size="20.0"/>
-                                               </font>
-                                           </Text>
-                                           <Text fx:id="genreDisplay" layoutX="160.0" layoutY="192.0"
-                                                 strokeType="OUTSIDE" strokeWidth="0.0" text="Žanr"
-                                                 wrappingWidth="250.0">
-                                               <font>
-                                                   <Font size="20.0"/>
-                                               </font>
-                                               <VBox.margin>
-                                                   <Insets left="150.0" top="60.0"/>
-                                               </VBox.margin>
-                                           </Text>
+                                           </ImageView>
                                        </children>
                                    </VBox>
                                </children>
                            </HBox>
-                           <VBox alignment="CENTER" layoutX="-1.0" layoutY="293.0" prefHeight="359.0" prefWidth="804.0">
+                           <VBox alignment="CENTER" layoutX="-2.0" layoutY="348.0" prefHeight="296.0" prefWidth="804.0">
                                <children>
-                                   <ImageView fx:id="image" fitHeight="298.0" fitWidth="415.0" pickOnBounds="true"
-                                              preserveRatio="true">
+                                   <TextField fx:id="searchBox" maxWidth="250.0" minHeight="35.0" onAction="#searchBook"
+                                              prefWidth="200.0" promptText="Unesite  naslov knjige">
                                        <VBox.margin>
                                            <Insets bottom="15.0"/>
                                        </VBox.margin>
-                                   </ImageView>
-                                   <Button fx:id="pdfButton" mnemonicParsing="false" onAction="#convertToPDF"
-                                           text="Izvezi u PDF">
+                                   </TextField>
+                                   <Button fx:id="pdfButton" alignment="BOTTOM_CENTER" mnemonicParsing="false"
+                                           onAction="#convertToPDF" text="Izvezi u PDF">
                                        <font>
                                            <Font size="15.0"/>
                                        </font>
                                        <VBox.margin>
-                                           <Insets bottom="10.0"/>
+                                           <Insets bottom="15.0" top="10.0"/>
                                        </VBox.margin>
                                    </Button>
                                </children>
