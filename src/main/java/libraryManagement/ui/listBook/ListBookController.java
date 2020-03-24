@@ -75,7 +75,6 @@ public class ListBookController implements Initializable {
             selectedBook = tableView.getSelectionModel().getSelectedItem();
             try {
 
-
                 FXMLLoader loader = new FXMLLoader();
                 loader.setLocation(getClass().getResource("/book.fxml"));
                 AnchorPane page = loader.load();

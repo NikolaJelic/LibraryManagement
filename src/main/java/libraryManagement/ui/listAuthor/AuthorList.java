@@ -16,7 +16,6 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import libraryManagement.database.DatabaseHandler;
 
-
 import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
@@ -26,6 +25,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class AuthorList implements Initializable {
+    //Lists all the unique authors and if one is selected, opens a new window that lists all the books written by that author
+
     ObservableList<Author> list = FXCollections.observableArrayList();
 
 

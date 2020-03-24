@@ -46,15 +46,12 @@ public class SearchBook implements Initializable {
     }
 
     private void loadData() throws SQLException {
+
         String sql = "SELECT * FROM BOOK";
 
         try (Connection conn = DriverManager.getConnection(DB_URL);
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
-            //   pstmt.setString(1, searchedBook);
             ResultSet rs = pstmt.executeQuery();
-//conn.close();
-            System.out.println(searchedBook + " je tražena knjiga");
-            System.out.println(rs.next());
             while (rs.next()) {
                 String title = rs.getString("bookTitle").toLowerCase();
                 if (title.equals(searchedBook.toLowerCase())) {
@@ -75,7 +72,7 @@ public class SearchBook implements Initializable {
 
     public void selectBook(MouseEvent mouseEvent) {
         if (tableView.getSelectionModel().getSelectedItem() != null) {
-
+//opens the selected book
             selectedBook = tableView.getSelectionModel().getSelectedItem();
             try {
 

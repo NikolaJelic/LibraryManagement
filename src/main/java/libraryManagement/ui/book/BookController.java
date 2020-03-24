@@ -193,7 +193,6 @@ public class BookController implements Initializable {
         }
     }
     private void loadData() {
-        // DatabaseHandler handler = DatabaseHandler.getInstance();
         String qu = "SELECT * FROM BOOK";
         ResultSet rs = handler.execQuery(qu);
 
@@ -247,10 +246,7 @@ public class BookController implements Initializable {
 
         try (Connection conn = DriverManager.getConnection(DB_URL);
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
-
-            // set the corresponding param
             pstmt.setInt(1, Integer.parseInt(id));
-            // execute the delete statement
             pstmt.executeUpdate();
 
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);

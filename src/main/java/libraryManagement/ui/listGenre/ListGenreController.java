@@ -25,6 +25,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ListGenreController implements Initializable {
+    //Lists all the unique genres and if one is selected, opens a new window that lists all the books belonging to that genre
 
     ObservableList<Genre> list = FXCollections.observableArrayList();
 
@@ -32,7 +33,6 @@ public class ListGenreController implements Initializable {
     public TableView<Genre> tableView;
     public TableColumn<Genre, String> genreCol;
 
-    // tried this but it gives an error
    static Genre selectedGenre;
 
 

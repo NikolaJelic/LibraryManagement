@@ -13,7 +13,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import libraryManagement.database.DatabaseHandler;
@@ -29,9 +28,7 @@ import java.util.ResourceBundle;
 public class MainController implements Initializable {
     private static final String DB_URL = "jdbc:sqlite:database.db";
     public TextField searchBox;
-    public Text bookIDDisplay;
-    public Text authorDisplay;
-    public Text genreDisplay;
+
     public Button pdfButton;
     public ImageView image;
     public AnchorPane rootPane;
@@ -124,6 +121,7 @@ public class MainController implements Initializable {
     }
 
     public void convertToPDF(ActionEvent actionEvent) throws FileNotFoundException, DocumentException, SQLException {
+        //creates a pdf with a table filled with data from the database
         try {
             conn = DriverManager.getConnection(DB_URL);
         } catch (Exception e) {
@@ -222,6 +220,7 @@ public class MainController implements Initializable {
         stage.close();
     }
 
+    // adds borders to the cells in the pdf
     public class MyBorder implements PdfPCellEvent {
         public void cellLayout(PdfPCell cell, Rectangle position,
                                PdfContentByte[] canvases) {

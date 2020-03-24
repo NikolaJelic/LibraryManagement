@@ -1,2 +1,0 @@
-U ovaj folder se automatski dodaju sve slike.
-Mijenjanje naziva ili lokacije ovog foldera ili njegovog sadrzaja moze izazvati probleme u radu programa!

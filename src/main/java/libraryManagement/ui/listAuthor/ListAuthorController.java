@@ -78,7 +78,6 @@ public class ListAuthorController implements Initializable {
         isReadCol.setCellValueFactory(new PropertyValueFactory<>("isRead"));
         isLentCol.setCellValueFactory(new PropertyValueFactory<>("isLent"));
 
-
     }
 
 
@@ -87,7 +86,6 @@ public class ListAuthorController implements Initializable {
 
             selectedBook = tableView.getSelectionModel().getSelectedItem();
             try {
-
 
                 FXMLLoader loader = new FXMLLoader();
                 loader.setLocation(getClass().getResource("/book.fxml"));
@@ -115,11 +113,9 @@ public class ListAuthorController implements Initializable {
             return title.get();
         }
 
-
         public String getId() {
             return id.get();
         }
-
 
         public String getGenre() {
             return genre.get();
@@ -129,11 +125,9 @@ public class ListAuthorController implements Initializable {
             return isRead.get();
         }
 
-
         public boolean isIsLent() {
             return isLent.get();
         }
-
 
         private final SimpleStringProperty title;
         private final SimpleStringProperty id;

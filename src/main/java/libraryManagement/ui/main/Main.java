@@ -19,7 +19,6 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/main.fxml"));
 
         Scene scene = new Scene(root);
-        //   scene.getStylesheets().add("/libraryManagement/resources/home-page.css");
 
         stage.setScene(scene);
         stage.setResizable(false);
@@ -37,13 +36,11 @@ public class Main extends Application {
 
         });
     }
-
     public void shutdown() {
         try {
             DriverManager.getConnection("jdbc:sqlite:./Biblioteka/database.db");
         } catch (
                 SQLException se) {
-            // SQL State XJO15 and SQLCode 50000 mean an OK shutdown.
             if (!(se.getErrorCode() == 50000) && (se.getSQLState().equals("XJ015")))
                 se.printStackTrace();
         }
