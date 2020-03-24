@@ -1,13 +1,11 @@
 package libraryManagement.database;
 
 
-import libraryManagement.ui.main.LibraryManagement;
 import org.sqlite.SQLiteConfig;
 import org.sqlite.SQLiteDataSource;
 
 import javax.swing.*;
 import java.io.File;
-import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -25,15 +23,12 @@ public class DatabaseHandler {
     private static Connection conn = null;
     private static Statement stmt = null;
     private static final String DB_URL = "jdbc:sqlite:./Biblioteka/database.db";
-    URL sourceDirectoryPath = LibraryManagement.class.getProtectionDomain().getCodeSource().getLocation();
     private Path SlikePath;
 
     private DatabaseHandler() throws SQLException {
         try {
 
-            //File jarLocation = new File(sourceDirectoryPath.toURI());
-            //  System.out.println(jarLocation.getAbsolutePath());
-            // File Slike = new File(jarLocation.getParentFile(), "Slike");
+
             File Slike = new File("./Biblioteka/Slike");
             SlikePath = Paths.get(Slike.getAbsolutePath());
             //jarLocation.mkdir();
@@ -43,7 +38,7 @@ public class DatabaseHandler {
             } else {
                 System.out.println("nije napravljen");
             }
-
+//Creates a new folder in which all the cover images, database and generated pdf will be stored
             List<String> lines = Arrays.asList("U ovaj folder se automatski dodaju sve slike.", "Mijenjanje naziva ili lokacije ovog foldera ili njegovog sadrzaja moze izazvati probleme u radu programa!");
             Path file = Paths.get(Slike.getAbsolutePath() + "//Napomena.txt");
             Files.write(file, lines, StandardCharsets.UTF_8);
